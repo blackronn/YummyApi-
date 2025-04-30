@@ -30,10 +30,10 @@ namespace ApiProjectKampi.WebApi.Migrations
                 {
                     ChefId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NameSurname = table.Column<int>(type: "int", nullable: false),
-                    Title = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<int>(type: "int", nullable: false),
-                    ImageUrl = table.Column<int>(type: "int", nullable: false)
+                    NameSurname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
